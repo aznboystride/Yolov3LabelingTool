@@ -4,7 +4,8 @@ wxIMPLEMENT_APP(cApp);
 
 bool cApp::OnInit()
 {
-	cMain* frame = new cMain();
+	wxInitAllImageHandlers();
+	frame = new cMain();
 	frame->Show();
 	return true;
 }
